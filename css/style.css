@@ -1,0 +1,108 @@
+@keyframes fade-in-out {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 100%; }
+  100% {
+    opacity: 0; } }
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-50rem);
+    opacity: 0; }
+  70% {
+    transform: translateY(50px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-50rem);
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(50rem);
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+.service-text {
+  font-size: 4rem;
+  font-family: "Do Hyeon", sans-serif;
+  color: #f0eded;
+  text-transform: uppercase; }
+
+.experience {
+  font-family: Arial;
+  color: #cbc8c8;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: 10px;
+  opacity: 0;
+  animation: slide-right .5s  2.5s forwards; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: #303030; }
+
+a,
+a:link,
+a:visited {
+  text-decoration: none; }
+
+.logoFull {
+  width: 50rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  animation: fade-in-out 2.5s;
+  pointer-events: none; }
+
+.services {
+  padding: 5rem 10rem; }
+  .services__logo {
+    pointer-events: none;
+    width: 15rem;
+    opacity: 0;
+    animation: slide-down .5s  2.5s forwards; }
+  .services__container {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .services__cocoen {
+    position: relative;
+    width: 50rem;
+    opacity: 0;
+    animation: slide-left .5s 2.5s forwards; }
+  .services .service-text {
+    opacity: 0;
+    animation: slide-right .5s  2.5s forwards;
+    margin-right: 10rem; }
+
+.services {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
