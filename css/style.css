@@ -170,18 +170,25 @@ a:visited {
   margin-top: 3rem; }
 
 .story__btn {
-  padding: 1rem 2rem;
+  padding: 2rem 3rem;
   font-size: 2rem;
+  font-family: Arial;
+  text-transform: uppercase;
   text-decoration: none;
   color: #f0eded;
   background-color: #7abfe6;
   border: none;
   outline: none;
-  border-radius: 10px;
-  width: 15rem;
+  border-radius: 5px;
+  width: 20rem;
   text-align: center;
   box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
   transition: all .2s; }
+  @media only screen and (max-width: 800px) {
+    .story__btn {
+      padding: 1.5rem 2.5rem;
+      font-size: 1.5rem;
+      width: 15rem; } }
   .story__btn:hover {
     cursor: pointer;
     transform: translateY(-3px);
