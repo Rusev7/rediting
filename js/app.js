@@ -6,3 +6,4 @@ document.querySelectorAll('.cocoen').forEach(function(element){
 */// for more than one elements ^^^^^
 
 new Cocoen(document.querySelector('.cocoen'));
+AOS.init();
