@@ -32,6 +32,14 @@
     opacity: 1;
     transform: translateX(0); } }
 
+@keyframes floating {
+  0% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(-30px); }
+  100% {
+    transform: translateY(0px); } }
+
 .service-text {
   font-size: 4rem;
   font-family: "Do Hyeon", sans-serif;
@@ -107,7 +115,8 @@ a:visited {
     pointer-events: none;
     width: 15rem;
     opacity: 0;
-    animation: slide-down .5s  2.5s forwards; }
+    transition: all .3s;
+    animation: slide-down .5s  2.5s forwards, floating 3s ease-in-out 3s infinite; }
   .services__container {
     margin-top: 10rem;
     display: flex;
