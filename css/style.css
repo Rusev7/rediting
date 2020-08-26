@@ -37,6 +37,12 @@
   font-family: "Do Hyeon", sans-serif;
   color: #f0eded;
   text-transform: uppercase; }
+  @media only screen and (max-width: 500px) {
+    .service-text {
+      font-size: 3rem; } }
+  @media only screen and (max-width: 400px) {
+    .service-text {
+      font-size: 2.5rem; } }
 
 .experience {
   font-family: Arial;
@@ -46,6 +52,12 @@
   margin-top: 10px;
   opacity: 0;
   animation: slide-right .5s  2.5s forwards; }
+  @media only screen and (max-width: 800px) {
+    .experience {
+      margin-bottom: 3rem; } }
+  @media only screen and (max-width: 400px) {
+    .experience {
+      font-size: 1.5rem; } }
 
 *,
 *::before,
@@ -57,6 +69,9 @@
 html {
   scroll-behavior: smooth;
   font-size: 62.5%; }
+  @media only screen and (max-width: 1000px) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box;
@@ -78,6 +93,14 @@ a:visited {
   animation: fade-in-out 2.5s;
   pointer-events: none; }
 
+@media only screen and (max-width: 1000px) {
+  .logoFull {
+    width: 40rem; } }
+
+@media only screen and (max-width: 600px) {
+  .logoFull {
+    width: 30rem; } }
+
 .services {
   padding: 5rem 10rem; }
   .services__logo {
@@ -90,11 +113,20 @@ a:visited {
     display: flex;
     justify-content: center;
     align-items: center; }
+    @media only screen and (max-width: 800px) {
+      .services__container {
+        flex-direction: column; } }
   .services__cocoen {
     position: relative;
     width: 50rem;
     opacity: 0;
     animation: slide-left .5s 2.5s forwards; }
+    @media only screen and (max-width: 500px) {
+      .services__cocoen {
+        width: 40rem; } }
+    @media only screen and (max-width: 400px) {
+      .services__cocoen {
+        width: 30rem; } }
   .services .service-text {
     opacity: 0;
     animation: slide-right .5s  2.5s forwards;
@@ -106,3 +138,6 @@ a:visited {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  @media only screen and (max-width: 1000px) {
+    .services {
+      height: auto; } }
