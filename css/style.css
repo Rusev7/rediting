@@ -283,7 +283,8 @@ a:visited {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  overflow-x: hidden; }
   @media only screen and (max-width: 1000px) {
     .services {
       height: auto; } }
@@ -292,7 +293,8 @@ a:visited {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  overflow-x: hidden; }
   @media only screen and (max-width: 1000px) {
     .story {
       height: auto; } }
