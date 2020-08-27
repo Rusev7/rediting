@@ -140,6 +140,9 @@ a:visited {
     display: flex;
     justify-content: space-evenly;
     min-width: 30%; }
+    @media only screen and (max-width: 400px) {
+      .navigation__items {
+        width: calc(100% - 6rem); } }
   .navigation__item {
     font-size: 1.5rem;
     color: #f0eded;
@@ -157,7 +160,8 @@ a:visited {
       transform: scale(1.1); }
     @media only screen and (max-width: 400px) {
       .navigation__item {
-        font-size: 1rem; } }
+        font-size: 1.2rem;
+        margin-right: 1.5rem; } }
   .navigation__btn {
     width: 3rem;
     height: 3rem;
@@ -169,8 +173,8 @@ a:visited {
       opacity: .5; }
     @media only screen and (max-width: 400px) {
       .navigation__btn {
-        height: 2rem;
-        width: 2rem; } }
+        height: 2.5rem;
+        width: 2.5rem; } }
 
 .navi-appearance {
   display: flex;
