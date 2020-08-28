@@ -52,6 +52,14 @@
   100% {
     transform: translateY(-10vh); } }
 
+@keyframes modalpop {
+  0% {
+    transform: scale(0); }
+  50% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1); } }
+
 .service-text {
   font-size: 4rem;
   font-family: "Do Hyeon", sans-serif;
@@ -102,6 +110,104 @@ a,
 a:link,
 a:visited {
   text-decoration: none; }
+
+.contacts {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 60;
+  display: none;
+  justify-content: center;
+  align-items: center; }
+  .contacts__modal {
+    position: relative;
+    width: 50rem;
+    height: 25rem;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(0);
+    animation: modalpop .4s forwards; }
+    @media only screen and (max-width: 500px) {
+      .contacts__modal {
+        width: 40rem; } }
+  .contacts__heading {
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: "Do Hyeon", sans-serif;
+    letter-spacing: 5px;
+    color: #f0eded;
+    text-transform: uppercase;
+    grid-column: 2/3;
+    justify-self: center; }
+  .contacts__close {
+    font-size: 3rem;
+    color: #f0eded;
+    grid-column: 3/-1;
+    justify-self: end;
+    transition: all .3s;
+    user-select: none; }
+    .contacts__close:hover {
+      cursor: pointer;
+      color: #c9c9c9; }
+    .contacts__close:active {
+      transform: scale(1.05); }
+  .contacts__contact {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  .contacts__icon {
+    height: 4rem;
+    width: 4rem;
+    fill: #f0eded; }
+  .contacts__info {
+    font-size: 2.5rem;
+    font-family: Arial;
+    color: #f0eded;
+    margin-left: 1rem; }
+  .contacts__call-btn {
+    background-color: #4ab4f1;
+    display: none;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    width: 45%;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-family: Arial;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: .3s ease-out; }
+    .contacts__call-btn:hover {
+      cursor: pointer;
+      background-color: #7abfe6; }
+    .contacts__call-btn:active {
+      transform: translateY(5px); }
+    @media only screen and (max-width: 600px) {
+      .contacts__call-btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; } }
+    @media only screen and (max-width: 500px) {
+      .contacts__call-btn {
+        width: 60%; } }
+
+@media only screen and (max-width: 600px) {
+  #phoneContainer {
+    display: none; } }
+
+.upper-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  width: 100%;
+  padding: 1rem 1.5rem; }
 
 .logoFull {
   width: 50rem;

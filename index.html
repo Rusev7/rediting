@@ -2,6 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
     <link rel="shortcut icon" href="./img/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
@@ -18,7 +19,7 @@
         </a>
 
         <div class="navigation__items">
-            <span class="navigation__item">contacts</span>
+            <span class="navigation__item contactsBtns">contacts</span>
             <a href="./portfolio.html" class="navigation__item">portfolio</a>
             <img src="./img/eng.jpg" alt="click to change the language" class="navigation__btn">
         </div>
@@ -58,13 +59,36 @@
             </h3>
 
             <div class="story__btn-container">
-                <button class="story__btn">contacts</button>
+                <button class="story__btn contactsBtns">contacts</button>
                 <a href="./portfolio.html" class="story__btn story__btn--dark-blue">portfolio</a>
             </div>
         </div>
         
         <img src="./img/me.png" alt="Me" class="story__img" data-aos="fade-left">
     </section>
+
+    <div class="contacts">
+        <div class="contacts__modal">
+            <div class="upper-content">
+                <h4 class="contacts__heading">Contacts</h4>
+                <span class="contacts__close" id="close">&times;</span>
+            </div>
+            <div class="contacts__contact">
+                <svg class="contacts__icon"><use xlink:href="./img/symbol-defs.svg#icon-envelop"></use></svg>
+                <span class="contacts__info">rusev731@gmail.com</span>
+            </div>
+
+            <div class="contacts__contact" id="phoneContainer">
+                <svg class="contacts__icon"><use xlink:href="./img/symbol-defs.svg#icon-phone"></use></svg>
+                <span class="contacts__info">+359 895 777 86</span>
+            </div>
+
+            <button class="contacts__call-btn" id="call">
+                <svg class="contacts__icon"><use xlink:href="./img/symbol-defs.svg#icon-phone"></use></svg>
+                Call me
+            </button>
+        </div>
+    </div>
 
     <script src="./js/cocoen.min.js"></script>
     <script src="./js/aos.js"></script>
