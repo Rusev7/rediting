@@ -41,6 +41,6 @@ window.addEventListener('click', e => {
 
 const callBtn = document.getElementById('call');
 
-callBtn.addEventListener('click', () => {
-    document.location.href = 'tel:+359895077786';
-})
+// callBtn.addEventListener('click', () => {
+//     document.location.href = 'tel:+359895077786';
+// });
