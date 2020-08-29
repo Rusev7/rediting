@@ -1,3 +1,9 @@
+// Initializie image slider
+new Cocoen(document.querySelector('.cocoen'));
+
+// Initialize scroll animations
+AOS.init();
+
 // GLOBAL VARS
 let language = "eng";
 const contactBtns = document.querySelectorAll('.contactsBtns');
