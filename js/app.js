@@ -71,7 +71,7 @@ function changeLanguage(lang) {
     const contactsHeading = document.querySelector('.contacts__heading');
     const callBtn = document.getElementById('call');
     
-    langBtn.src = `../img/${language}.jpg`;
+    langBtn.src = `./img/${language}.jpg`;
 
     if(lang == 'bg') {
         heading.innerHTML = `Ще преработя вашите</br>
