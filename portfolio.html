@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <title>R Editing -- portfolio</title>
+</head>
+<body>
+    <nav class="navigation navi-appearance">
+        <a href="./index.html">
+            <img src="./img/LogoSmall.png" alt="small logo" class="navigation__logo">
+        </a>
+
+        <div class="navigation__items">
+            <span class="navigation__item contactsBtns">contacts</span>
+            <img src="./img/eng.jpg" id="lang" alt="click to change the language" class="navigation__btn">
+        </div>
+    </nav>
+    
+    <div class="contacts">
+        <div class="contacts__modal">
+            <div class="upper-content">
+                <h4 class="contacts__heading">Contacts</h4>
+                <span class="contacts__close" id="close">&times;</span>
+            </div>
+            <div class="contacts__contact">
+                <svg class="contacts__icon"><use xlink:href="./img/symbol-defs.svg#icon-envelop"></use></svg>
+                <span class="contacts__info">rusev731@gmail.com</span>
+            </div>
+
+            <div class="contacts__contact" id="phoneContainer">
+                <svg class="contacts__icon"><use xlink:href="./img/symbol-defs.svg#icon-phone"></use></svg>
+                <span class="contacts__info">+359 895 777 86</span>
+            </div>
+
+            <a href="tel:+359895077786" class="contacts__call-btn" id="call">
+                <svg class="contacts__icon"><use xlink:href="./img/symbol-defs.svg#icon-phone"></use></svg>
+                Call me
+            </a>
+        </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
